@@ -48,3 +48,20 @@ def dup(arr):
     return uni  # Return the list with unique elements
 
 print(dup(arr))  # Call the function and print the result
+3)
+arr = [40,59,68,70]
+M = 70
+def no(arr,M):
+    count = 0
+    
+    n = len(arr)
+    for i in range(n):
+        if arr[i]%5 == 0:
+            count += 1
+        
+        elif arr[i] <= M:
+            M -= arr[i]
+            count += 1
+            
+    return count
+print(no(arr,M))
