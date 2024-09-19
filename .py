@@ -65,3 +65,10 @@ def no(arr,M):
             
     return count
 print(no(arr,M))
+4) def pal(str,f,s):
+    for i in range(f,s+1):
+        if str(i) == str(i)[::-1]:
+            print(i)
+f = 10
+s = 60
+print(pal(str,f,s))
