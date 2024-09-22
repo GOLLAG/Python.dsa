@@ -1,4 +1,4 @@
-arr = [1, 4, 5]
+ arr = [1, 4, 5]
 
 def max(arr):
     M = arr[0]
