@@ -72,3 +72,40 @@ print(no(arr,M))
 f = 10
 s = 60
 print(pal(str,f,s))
+22/09/2024
+1)arr = [-1, 3, -2, 4, -5, 6]
+def ls(arr):
+    max_sum = 0
+    cs = 0
+    for num in arr:
+        cs = max(num,cs+num)
+        max_sum = max(max_sum , cs)
+    return max_sum
+print(ls(arr))
+2)arr = [1,2,3,4,5,6,7]
+k=3
+def rt(arr,k):
+    
+    return arr[-k:] + arr[:-k]
+print(rt(arr,k))
+3)def a(s1,s2):
+    return sorted(s1) == sorted(s2)
+s1='eta'
+s2='ate'
+print(a(s1,s2))
+4)def fns(s):
+    cf = {}
+    for char in s:
+        if char in cf:
+            cf[char]+=1
+        else:
+            cf[char]=1
+    for char in s:
+        if cf[char]==1:
+            return char
+s = "aabcca"
+print(fns(s))
+            
+
+
+
