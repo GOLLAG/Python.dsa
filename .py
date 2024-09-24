@@ -105,7 +105,28 @@ print(a(s1,s2))
             return char
 s = "aabcca"
 print(fns(s))
-            
+24/09/24
+1) longest palindrome
+def ls(s):
+    n=len(s)
+    l = ""
+    for i in range(n):
+        for j in range(i, n):
+            substring = s[i:j+1]
+            if substring == substring[::-1] and len(substring) > len(l):
+                l = substring
+    return l
+s = "babcd"
+print(ls(s))
+ 2) def fab(n):
+    seq = [0,1]
+    for i in range(2,n):
+        next_value = seq[i-1] + seq[i-2]
+        seq.append(next_value)
+    return seq
+print(fab(10))
+    
+    
 
 
 
