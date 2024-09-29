@@ -8,7 +8,7 @@ def max(arr):
     return M
 
 print(max(arr))
-REVERSE
+REVERSE 
 arr = [1, 4, 5]
 
 def reverse(arr):
