@@ -30,6 +30,5 @@ print(sel(arr))
             return i
     return -1
 
-
 arr = [10,23,12,13]
 print(linear_search(arr))
