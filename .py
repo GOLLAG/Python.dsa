@@ -125,6 +125,34 @@ print(ls(s))
         seq.append(next_value)
     return seq
 print(fab(10))
+2-10-24
+1) Remove vowels
+def vo(x):
+    vowels = "aeiouAEIOU"
+    for char in vowels:
+        x = x.replace(char, "")  # Replace each vowel in the string
+    return x
+
+x = "war"
+print(vo(x))
+2) def alpha(x):
+    result = ""
+    for char in x:
+        if char.isalpha():
+            result+=char
+    return result
+x = "2wdw3"
+print(alpha(x))
+3) Sum of characters present in the string
+def rev(x):
+    x = [int(char) for char in x]  # Convert each character to an integer
+    t = sum(x)  # Sum the digits
+    return t
+
+x = "123"
+print(rev(x))  # Output will be 6
+4)
+
     
     
 
